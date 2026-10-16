@@ -17,4 +17,9 @@ jobs:
       - name: Análisis
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          SONAR_TOKEN: ${{ secrets.a6e93378141018200269c18f731e81be8c856e9b }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: >
+            -Dsonar.organization=Santiago Arevalo
+            -Dsonar.projectKey=LaboratorioPruebasMantenimiento
