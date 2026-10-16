@@ -22,4 +22,4 @@ jobs:
         with:
           args: >
             -Dsonar.organization=SantiagoTyrsArv
-            -Dsonar.projectKey=santiagotyrsarv
+            -Dsonar.projectKey=SantiagoTyrsArv_LaboratorioPruebasMantenimiento
