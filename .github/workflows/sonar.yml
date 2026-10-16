@@ -21,5 +21,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: >
-            -Dsonar.organization=SantiagoTyrsArv
-            -Dsonar.projectKey=SantiagoTyrsArv_LaboratorioPruebasMantenimiento
+            -Dsonar.organization=santiagotyrsarv
+            -Dsonar.projectKey=santiagotyrsarv_LaboratorioPruebasMantenimiento
