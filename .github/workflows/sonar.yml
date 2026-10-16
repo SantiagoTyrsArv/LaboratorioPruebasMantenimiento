@@ -1,0 +1,20 @@
+name: Quality Gate - SonarCloud
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  sonarcloud:
+    name: Análisis SonarCloud
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Análisis
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.a6e93378141018200269c18f731e81be8c856e9b }}
